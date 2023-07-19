@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="logo-black.png" type="image/jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script >
+
+
+      window.addEventListener('scroll', function() {
+        var header = document.querySelector('header');
+        var logo = document.querySelector('.logo');
+        var scrollPosition = window.scrollY;
+        if (scrollPosition > 0) {
+          console.log("activated");
+          logo.classList.add("logo_shrink");
+          logo.setAttribute('src',"white-logo.png");
+          header.classList.add('header__shrink');
+        } else {
+          header.classList.remove('header__shrink');
+          logo.classList.remove("logo_shrink");
+          logo.setAttribute("src","LunarGen.png");
+        }
+      });
+
+
+
+
+    function funct(){
+      navigator.clipboard.writeText("LunarGen@lunargen.com");
+
+  // Alert the copied text
+    alert("Copied the text: " + copyText.value);
+    }
+
+    window.addEventListener('scroll', function() {
+      var element = document.querySelector('.fade-in-out');
+      
+    
+      // If the element is in the viewport, fade it in
+      
+    });
+
+        window.addEventListener('scroll', function() {
+        var element = document.querySelector('.slide-in-out');
+      
+
+      // If the element is in the viewport, slide and fade it in
+      
+
+      // If the element is not in the viewport, slide and fade it out
+      
+    });
+
+    
+    </script>
+    <title>LunarGen</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="LunarGen.png" alt="LunarGen logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a id="lg1" href="#services-content">Software</a></li>
+          
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero fade-in-out" id="home">
+        <br><br>
+        <h1>Accelerate your business growth with cutting edge technology.</h1>
+        <br><br><br><br>
+        <p>At Lunargen, we're passionate about software development and creating customized solutions to fit your unique business needs.</p>
+        <br>
+      </section>
+
+      <section class="services api-container" id="services-content">
+        
+        <div class="service">
+          <h3>LunarGen Process</h3>
+          <p>We understand that application requirements can pivot and change throughout the development lifesycle.</p>
+          <br><br>
+          <p>It is our goal to satisfy our client's dynamic needs.</p>
+          <br><br>
+          <!-- <p><a href=""><em>LunarGen Photo v1.1</em></a></p> -->
+          <br><br><br><br>
+          <img src="logo-black.png"> 
+          
+        </div>
+      </section>
+      <section class="services" id="about">
+        
+        <div class="about-content" >
+          <div class="service">
+            <h3>Our Mission</h3>
+            <p>We are driven to provide innovative solutions to clients. Our vision is to break down the barrier between people and technology.</p>
+          </div>
+          <div class="service">
+            <h3>Our Team</h3>
+            <p>LunarGen is a family of competitive software engineers. Our diverse team comes from all walks of life in many different career stages.</p>
+            
+          </div>
+          <img src="diversity.jpg" height="80px" width="300px">
+          <br><br>
+         
+          <div class="service">
+            <h3>Why LunarGen?</h3>
+            <p>At LunarGen, we understand that our business relationships are the foundation of our success. We take pride in delivering quality products.</p>
+          </div>
+          <img class="center" src="LunarGen.png" alt="Startup image" id="contact">
+        </div>
+      </section>
+
+
+      <section class="testimonials" >
+        <h2>Contact Us</h2>
+        <div class="testimonial">
+          <blockquote>
+            Contact our team for an initial consultation below:
+          </blockquote>
+         
+          <a href="email.html" target=”_blank”>LunarGen@lunargen.com</a>
+          <br><br>
+          <a href="http://linkedin.com/company/lunargen"><img src="linkedin.png" height="50px" width="100px" ></a>
+        </div>
+        <div class="testimonial">
+          
+        </div>
+      </section>
+      
+
+
+      <section class="services ">
+        <div class="service">
+          <h3>Custom Application Solutions</h3>
+          <p> We offer a wide array of web and mobile application solutions tailored to clients needs. </p><br>
+          <p> Free consultations available upon request. </p><br>
+          <img src="cloud-storage.svg">
+        </div>
+
+      </section>
+      <section class="testimonials">
+        <div class="service">
+          <h3>Platform Arsenal</h3>
+            <div id="logos">
+            <img src="aws.jpg">
+            <img src="azure.png">
+            
+            <img  src="react.png">
+            <img src="python.png">
+            <img src="docker.png">
+            <img src="next.webp">
+          </div>
+          </div>
+          </section>
+          
+        
+      
+     
+      
+      
+      
+      
+    <footer>
+      <p>&copy; 2023 LunarGen. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
